@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный калькулятор цен</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-card">
+        <h1 id="shop-title">Интерактивный калькулятор цен</h1>
+        
+        <p>Введите сумму заказа:</p>
+        <input type="number" id="sum-input" placeholder="Например, 5000">
+        
+        <p>
+            <label for="currency-select">Валюта расчета: </label>
+            <select id="currency-select">
+                <option value="RUB">Рубли (₽)</option>
+                <option value="USD">Доллары ($)</option>
+                <option value="EUR">Евро (€)</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" id="vip-checkbox">
+            <label for="vip-checkbox">Являюсь VIP-клиентом (Gold Member)</label>
+        </p>
+
+        <button id="calc-btn">Рассчитать стоимость со скидкой</button>
+        <h2 id="result-text">Результат появится здесь . . .</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
